@@ -1,0 +1,73 @@
+/* ========= CSS RESET / NORMALIZATION ========= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ========= ROOT VARIABLES ========= */
+:root {
+  /* Colors */
+  --white: hsl(0, 0%, 100%);
+  --slate-300: hsl(212, 45%, 89%);
+  --slate-500: hsl(216, 15%, 48%);
+  --slate-900: hsl(218, 44%, 22%);
+
+  /* Font */
+  --font-family: 'Outfit', sans-serif;
+  --font-size-base: 15px;
+
+  /* Border radius */
+  --radius: 1rem;
+
+  /* Padding default for containers (optional) */
+  --container-padding: 1.5rem;
+}
+
+/* ========= BASE STYLES ========= */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+  background-color: var(--slate-300);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 360px;
+  border-radius: var(--radius);
+  background-color: white;
+  padding: var(--container-padding);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.container img {
+  width: 100%;
+  border-radius: var(--radius);
+}
+.container h2 {
+  font-weight: 700;
+  color: var(--slate-900);
+}
+.container p {
+  color: var(--slate-500);
+  font-size: var(--font-size-base);
+}
+
+/* Attribution styling */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 2rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
